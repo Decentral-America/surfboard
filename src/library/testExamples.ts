@@ -10,7 +10,7 @@ export const testExamples: {
     Functions available in global scope:
     1. 'describe', 'it' from mocha. https://mochajs.org/
     2. 'expect' from chai. https://www.chaijs.com/
-    3.  Functions from @waves/waves-transactions. https://wavesplatform.github.io/waves-transactions/. 
+    3.  Functions from @decentralchain/waves-transactions. https://github.com/Decentral-America/waves-transactions#readme. 
     These functions use current account and current node as defaults 
     4.  'address', 'privateKey', 'publicKey' from  @waves/waves-crypto. Current account is used as default
 */

@@ -3,7 +3,7 @@ import { Provider as Nconf } from 'nconf';
 import { generateMnemonic } from 'bip39';
 import { IConfig as IOclifConfig } from '@oclif/config';
 import Mocha from 'mocha';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 
 export interface IEnv {
     API_BASE: string
@@ -29,13 +29,13 @@ export const systemConfig: IConfig = {
     envs: {
         custom: {
             API_BASE: 'http://localhost:6869/',
-            CHAIN_ID: 'R',
-            SEED: 'waves private node seed with waves tokens',
+            CHAIN_ID: '?',
+            SEED: 'DecentralChain private node seed with DCC tokens',
             timeout: 60000
         },
         testnet: {
-            API_BASE: 'https://nodes-testnet.wavesnodes.com/',
-            CHAIN_ID: 'T',
+            API_BASE: 'https://testnet-node.decentralchain.io/',
+            CHAIN_ID: '!',
             SEED: 'testnet seed placeholder',
             timeout: 60000
         }

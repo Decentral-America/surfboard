@@ -1,7 +1,7 @@
 import repl, { REPLServer } from 'repl';
 import { getFunctionsDoc, getTypes, getVarsDoc, repl as compiler, version } from '@waves/ride-js';
 import { Command } from '@oclif/command';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 import chalk from 'chalk';
 import cli from 'cli-ux';
 import * as flags from '@oclif/command/lib/flags';

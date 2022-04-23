@@ -4,7 +4,7 @@ import * as path from 'path';
 import axios from 'axios';
 import cli from 'cli-ux';
 import url from 'url';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 import configService from '../config';
 import { injectTestEnvironment } from './testEnv';
 import { getFileContent } from '../../utils';

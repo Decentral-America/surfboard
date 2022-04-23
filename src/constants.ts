@@ -6,15 +6,15 @@ export const NETWORKS = {
         explorer: 'https://wavesexplorer.com/stagenet'
     },
     TESTNET: {
-        url: 'https://nodes-testnet.wavesnodes.com',
-        chainId: 'T',
-        faucet: 'https://wavesexplorer.com/testnet/faucet',
-        explorer: 'https://wavesexplorer.com/testnet'
+        url: 'https://testnet-node.decentralchain.io',
+        chainId: '!',
+        faucet: 'https://decentralscan.com/testnet/faucet',
+        explorer: 'https://decentralscan.com/testnet'
     },
     MAINNET: {
-        url: 'https://nodes.wavesplatform.com',
-        chainId: 'W',
-        explorer: 'https://wavesexplorer.com'
+        url: 'https://mainnet-node.decentralchain.io',
+        chainId: '?',
+        explorer: 'https://decentralscan.com'
     },
     PRIVATE: {
         url: 'http://localhost:6869',

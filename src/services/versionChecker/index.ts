@@ -11,7 +11,7 @@ export default async function checkVersion(name: string, version: string, id?: s
             console.log(`${id === 'repl' ? '\n' : ''}\n`);
             console.log(
                 boxen(`Update available ${red(version)} → ${green(currentVersion)}\n` +
-                    `Run ${blue(`npm i -g @waves/surfboard${version.includes('beta') ? '@beta' : ''}`)} to update`,
+                    `Run ${blue(`npm i -g @decentralchain/surfboard${version.includes('beta') ? '@beta' : ''}`)} to update`,
                     {borderColor: 'red', padding: 2, margin: 1})
             );
             console.log(id === 'repl' ? `\n${prompt}` : '');

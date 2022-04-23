@@ -2,7 +2,7 @@ import * as chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import cli from 'cli-ux';
 import axios from 'axios';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 import augment, { TSetupAccountsFunc } from '@waves/js-test-env/augment';
 import { NETWORKS } from '../../constants';
 
@@ -42,7 +42,7 @@ const setupAccountsWrapper: (x: TSetupAccountsFunc) => TSetupAccountsFunc = f =>
     if (network) {
         if ((network === NETWORKS.PRIVATE && !(await checkOnlineUrl(network.explorer)))) {
             cli.log('\nFailed to get local explorer\nExecute this:\n' +
-                'docker run -d -e API_NODE_URL=http://localhost:6869 -e NODE_LIST=http://localhost:6869 -p 3000:8080 wavesplatform/explorer\n');
+                'docker run -d -e API_NODE_URL=http://localhost:6869 -e NODE_LIST=http://localhost:6869 -p 3000:8080 blockchaincostarica/explorer\n');
         } else {
             cli.log('\nExplorer links');
             Object.entries(accs).forEach(([name, seed]) =>

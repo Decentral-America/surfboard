@@ -18,17 +18,17 @@ The full manual how to use different tools for Waves dApps you can find [here](h
 * [Commands](#commands)
 <!-- tocstop -->
 # Installation
-Surfboard is distributed as npm package. To install run `npm i -g @waves/surfboard`
+Surfboard is distributed as npm package. To install run `npm i -g @decentralchain/surfboard`
 
 # Usage
 For all commands surboard tries to use `surfboard.config.json`. If it is not present, surfboard falls back to global config. You can change global config by using `config:change` with `-g` flag 
 <!-- usage -->
 ```sh-session
-$ npm install -g @waves/surfboard
+$ npm install -g @decentralchain/surfboard
 $ surfboard COMMAND
 running command...
 $ surfboard (-v|--version|version)
-@waves/surfboard/2.2.4 darwin-x64 node-v17.0.1
+@decentralchain/surfboard/2.2.4 darwin-x64 node-v17.0.1
 $ surfboard --help [COMMAND]
 USAGE
   $ surfboard COMMAND
